@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Focus Timer style Pomodoro">
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
   <title>Focus Timer</title>
 </head>
+
 <body>
-  <main>
-    <img src="" alt="">
-    <section>
-      <h1></h1>
+  <div id="app">
+    <button  id="toggle-mode">
+      <span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>  
+      </span>
+    </button>
+    <section id="timer">
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
     </section>
-    <section>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+
+    <section id="controls">
+      <button class="ph ph-play-circle"></button>
+      <button class="ph ph-pause-circle"></button>
+      <button class="ph ph-timer"></button>
+      <button class="ph ph-stop-circle"></button>
+      <button class="ph ph-speaker-none"></button>
+      <button class="ph ph-speaker-high"></button>
     </section>
-  </main>
+  </div>
 
   <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>
