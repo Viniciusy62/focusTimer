@@ -17,6 +17,7 @@
 html.light {
   --txt-color: hsl(var(--hue), 5%, 7%);
   --bg-color: hsl(var(--hue), 40%, 98%);
+  transition: background 1s;
 }
 
 html.light .ph-sun,
