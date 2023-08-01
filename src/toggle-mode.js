@@ -10,6 +10,6 @@ export const toggleMode = {
     
     toggleMode.darkMode = !toggleMode.darkMode
   }
-} 
+};
 
 toggleMode.btnToggleMode.addEventListener("click", toggleMode.toggle)
