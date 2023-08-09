@@ -5,7 +5,6 @@ import state from "./state.js";
 import * as el from "./elements.js";
 import { reset } from "./actions.js";
 
-
 export function countdown() {
   if (!state.isRunning) {
     return;
@@ -16,14 +15,14 @@ export function countdown() {
 
   seconds--;
 
-  if(seconds < 0) {
+  if (seconds < 0) {
     seconds = 59;
-    minutes--
+    minutes--;
   }
 
-  if(minutes < 0) {
-    reset()
-    return
+  if (minutes < 0) {
+    reset();
+    return;
   }
 
   updateDisplay(minutes, seconds);
