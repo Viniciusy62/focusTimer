@@ -7,6 +7,9 @@ import { reset } from "./actions.js";
 import { kitchenTimer } from "./sounds.js";
 
 export function countdown() {
+
+  clearTimeout(state.countdownId)
+
   if (!state.isRunning) {
     return;
   }
@@ -29,7 +32,7 @@ export function countdown() {
 
   updateDisplay(minutes, seconds);
 
-  setTimeout(() => {
+  state.countdownId = setTimeout(() => {
     countdown();
   }, 1000);
 }
